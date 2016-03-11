@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2209BFB1C930ACE0067D819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209BFA1C930ACE0067D819 /* AppDelegate.swift */; };
+		A2209BFD1C930ACE0067D819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209BFC1C930ACE0067D819 /* ViewController.swift */; };
+		A2209C001C930ACE0067D819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2209BFE1C930ACE0067D819 /* Main.storyboard */; };
+		A2209C031C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2209C011C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodeld */; };
+		A2209C051C930ACE0067D819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2209C041C930ACE0067D819 /* Assets.xcassets */; };
+		A2209C081C930ACE0067D819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2209C061C930ACE0067D819 /* LaunchScreen.storyboard */; };
+		A2209C131C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */; };
+		A2209C1E1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2209C0F1C930ACE0067D819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2209BEF1C930ACE0067D819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2209BF61C930ACE0067D819;
+			remoteInfo = FuckOffAsAServiceSwift;
+		};
+		A2209C1A1C930ACE0067D819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2209BEF1C930ACE0067D819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2209BF61C930ACE0067D819;
+			remoteInfo = FuckOffAsAServiceSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2209BF71C930ACE0067D819 /* FuckOffAsAServiceSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckOffAsAServiceSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2209BFA1C930ACE0067D819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2209BFC1C930ACE0067D819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2209BFF1C930ACE0067D819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2209C021C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuckOffAsAServiceSwift.xcdatamodel; sourceTree = "<group>"; };
+		A2209C041C930ACE0067D819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2209C071C930ACE0067D819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2209C091C930ACE0067D819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckOffAsAServiceSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckOffAsAServiceSwiftTests.swift; sourceTree = "<group>"; };
+		A2209C141C930ACE0067D819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckOffAsAServiceSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckOffAsAServiceSwiftUITests.swift; sourceTree = "<group>"; };
+		A2209C1F1C930ACE0067D819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2209BF41C930ACE0067D819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C0B1C930ACE0067D819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C161C930ACE0067D819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2209BEE1C930ACE0067D819 = {
+			isa = PBXGroup;
+			children = (
+				A2209BF91C930ACE0067D819 /* FuckOffAsAServiceSwift */,
+				A2209C111C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */,
+				A2209C1C1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */,
+				A2209BF81C930ACE0067D819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2209BF81C930ACE0067D819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2209BF71C930ACE0067D819 /* FuckOffAsAServiceSwift.app */,
+				A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */,
+				A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2209BF91C930ACE0067D819 /* FuckOffAsAServiceSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A2209BFA1C930ACE0067D819 /* AppDelegate.swift */,
+				A2209BFC1C930ACE0067D819 /* ViewController.swift */,
+				A2209BFE1C930ACE0067D819 /* Main.storyboard */,
+				A2209C041C930ACE0067D819 /* Assets.xcassets */,
+				A2209C061C930ACE0067D819 /* LaunchScreen.storyboard */,
+				A2209C091C930ACE0067D819 /* Info.plist */,
+				A2209C011C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodeld */,
+			);
+			path = FuckOffAsAServiceSwift;
+			sourceTree = "<group>";
+		};
+		A2209C111C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */,
+				A2209C141C930ACE0067D819 /* Info.plist */,
+			);
+			path = FuckOffAsAServiceSwiftTests;
+			sourceTree = "<group>";
+		};
+		A2209C1C1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */,
+				A2209C1F1C930ACE0067D819 /* Info.plist */,
+			);
+			path = FuckOffAsAServiceSwiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2209C221C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwift" */;
+			buildPhases = (
+				A2209BF31C930ACE0067D819 /* Sources */,
+				A2209BF41C930ACE0067D819 /* Frameworks */,
+				A2209BF51C930ACE0067D819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuckOffAsAServiceSwift;
+			productName = FuckOffAsAServiceSwift;
+			productReference = A2209BF71C930ACE0067D819 /* FuckOffAsAServiceSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2209C0D1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2209C251C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftTests" */;
+			buildPhases = (
+				A2209C0A1C930ACE0067D819 /* Sources */,
+				A2209C0B1C930ACE0067D819 /* Frameworks */,
+				A2209C0C1C930ACE0067D819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2209C101C930ACE0067D819 /* PBXTargetDependency */,
+			);
+			name = FuckOffAsAServiceSwiftTests;
+			productName = FuckOffAsAServiceSwiftTests;
+			productReference = A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2209C181C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2209C281C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftUITests" */;
+			buildPhases = (
+				A2209C151C930ACE0067D819 /* Sources */,
+				A2209C161C930ACE0067D819 /* Frameworks */,
+				A2209C171C930ACE0067D819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2209C1B1C930ACE0067D819 /* PBXTargetDependency */,
+			);
+			name = FuckOffAsAServiceSwiftUITests;
+			productName = FuckOffAsAServiceSwiftUITests;
+			productReference = A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2209BEF1C930ACE0067D819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Marks and Spencer";
+				TargetAttributes = {
+					A2209BF61C930ACE0067D819 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A2209C0D1C930ACE0067D819 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A2209BF61C930ACE0067D819;
+					};
+					A2209C181C930ACE0067D819 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A2209BF61C930ACE0067D819;
+					};
+				};
+			};
+			buildConfigurationList = A2209BF21C930ACE0067D819 /* Build configuration list for PBXProject "FuckOffAsAServiceSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2209BEE1C930ACE0067D819;
+			productRefGroup = A2209BF81C930ACE0067D819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */,
+				A2209C0D1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */,
+				A2209C181C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2209BF51C930ACE0067D819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2209C081C930ACE0067D819 /* LaunchScreen.storyboard in Resources */,
+				A2209C051C930ACE0067D819 /* Assets.xcassets in Resources */,
+				A2209C001C930ACE0067D819 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C0C1C930ACE0067D819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C171C930ACE0067D819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2209BF31C930ACE0067D819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2209BFD1C930ACE0067D819 /* ViewController.swift in Sources */,
+				A2209C031C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodeld in Sources */,
+				A2209BFB1C930ACE0067D819 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C0A1C930ACE0067D819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2209C131C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2209C151C930ACE0067D819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2209C1E1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2209C101C930ACE0067D819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */;
+			targetProxy = A2209C0F1C930ACE0067D819 /* PBXContainerItemProxy */;
+		};
+		A2209C1B1C930ACE0067D819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */;
+			targetProxy = A2209C1A1C930ACE0067D819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2209BFE1C930ACE0067D819 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2209BFF1C930ACE0067D819 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2209C061C930ACE0067D819 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2209C071C930ACE0067D819 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2209C201C930ACE0067D819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2209C211C930ACE0067D819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2209C231C930ACE0067D819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FuckOffAsAServiceSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A2209C241C930ACE0067D819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FuckOffAsAServiceSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A2209C261C930ACE0067D819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FuckOffAsAServiceSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckOffAsAServiceSwift.app/FuckOffAsAServiceSwift";
+			};
+			name = Debug;
+		};
+		A2209C271C930ACE0067D819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FuckOffAsAServiceSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckOffAsAServiceSwift.app/FuckOffAsAServiceSwift";
+			};
+			name = Release;
+		};
+		A2209C291C930ACE0067D819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FuckOffAsAServiceSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FuckOffAsAServiceSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A2209C2A1C930ACE0067D819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FuckOffAsAServiceSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FuckOffAsAServiceSwift;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2209BF21C930ACE0067D819 /* Build configuration list for PBXProject "FuckOffAsAServiceSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2209C201C930ACE0067D819 /* Debug */,
+				A2209C211C930ACE0067D819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2209C221C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2209C231C930ACE0067D819 /* Debug */,
+				A2209C241C930ACE0067D819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2209C251C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2209C261C930ACE0067D819 /* Debug */,
+				A2209C271C930ACE0067D819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2209C281C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2209C291C930ACE0067D819 /* Debug */,
+				A2209C2A1C930ACE0067D819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2209C011C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2209C021C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodel */,
+			);
+			currentVersion = A2209C021C930ACE0067D819 /* FuckOffAsAServiceSwift.xcdatamodel */;
+			path = FuckOffAsAServiceSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2209BEF1C930ACE0067D819 /* Project object */;
+}
