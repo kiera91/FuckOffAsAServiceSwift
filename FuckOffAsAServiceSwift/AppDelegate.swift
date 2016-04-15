@@ -18,8 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let newFuck = FuckOffAsAService(from: "kiera", name: "chris")
-//        let fuckString = newFuck.typeOfFuckToGive(.off)
+        let newFuck = FuckOffAsAService(from: "kiera", name: "chris", theFuckToGive: .off)
         
         newFuck.callFuckService()
         

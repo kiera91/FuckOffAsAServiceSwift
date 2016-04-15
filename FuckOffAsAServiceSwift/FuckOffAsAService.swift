@@ -8,43 +8,32 @@
 
 import Foundation
 
-class FuckOffAsAService {
- 
-    var name: String = ""
-    var from: String = ""
-    var reference: String = ""
-    var tool: String = ""
-    var company: String = ""
-    var theFuckToGive: FucksToGive = .off
+protocol FuckOffAsAServiceProtocol {
+    var name: String! { get set }
+    var from: String! { get set }
+    var reference: String! { get set }
+    var tool: String! { get set }
+    var company: String! { get set }
+    var theFuckToGive: FucksToGive! { get set }
     
+    func buildYourFuckString() -> String
+}
+
+class FuckOffAsAService: FuckOffAsAServiceProtocol {
+    var name: String!
+    var from: String!
+    var reference: String!
+    var tool: String!
+    var company: String!
+    var theFuckToGive: FucksToGive!
     
-    init(from: String, name: String) {
+    init(from: String, name: String, reference: String = "", tool: String = "", company: String = "", theFuckToGive: FucksToGive) {
         self.from = from
         self.name = name
-    }
-    
-    func typeOfFuckToGive(fuck: FucksToGive) {
-        self.theFuckToGive = fuck
-    }
-    
-    func withName(name: String) {
-        self.name = name
-    }
-    
-    func withFrom(from: String) {
-        self.from = from
-    }
-    
-    func withTool(tool: String) {
-        self.tool = tool
-    }
-    
-    func withReference(reference: String) {
         self.reference = reference
-    }
-    
-    func withCompany(company: String) {
+        self.tool = tool
         self.company = company
+        self.theFuckToGive = theFuckToGive
     }
     
     func buildYourFuckString() -> String {
