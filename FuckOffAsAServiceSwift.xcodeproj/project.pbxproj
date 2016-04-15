@@ -13,22 +13,15 @@
 		A2209C051C930ACE0067D819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2209C041C930ACE0067D819 /* Assets.xcassets */; };
 		A2209C081C930ACE0067D819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2209C061C930ACE0067D819 /* LaunchScreen.storyboard */; };
 		A2209C131C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */; };
-		A2209C1E1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */; };
 		A2209C2D1C930C0E0067D819 /* FuckOffAsAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C2C1C930C0E0067D819 /* FuckOffAsAService.swift */; };
 		A2209C2F1C9310040067D819 /* FucksToGive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C2E1C9310040067D819 /* FucksToGive.swift */; };
 		A2209C311C9323CF0067D819 /* FuckHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2209C301C9323CF0067D819 /* FuckHTTPClient.swift */; };
+		A2CD33421CC10F49003DAB62 /* MockFuckHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CD33411CC10F49003DAB62 /* MockFuckHTTPClient.swift */; };
 		A2D8A17F1CAEB524009ABE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D8A17D1CAEB524009ABE94 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A2209C0F1C930ACE0067D819 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2209BEF1C930ACE0067D819 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2209BF61C930ACE0067D819;
-			remoteInfo = FuckOffAsAServiceSwift;
-		};
-		A2209C1A1C930ACE0067D819 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2209BEF1C930ACE0067D819 /* Project object */;
 			proxyType = 1;
@@ -49,12 +42,10 @@
 		A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckOffAsAServiceSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckOffAsAServiceSwiftTests.swift; sourceTree = "<group>"; };
 		A2209C141C930ACE0067D819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuckOffAsAServiceSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckOffAsAServiceSwiftUITests.swift; sourceTree = "<group>"; };
-		A2209C1F1C930ACE0067D819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2209C2C1C930C0E0067D819 /* FuckOffAsAService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckOffAsAService.swift; sourceTree = "<group>"; };
 		A2209C2E1C9310040067D819 /* FucksToGive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FucksToGive.swift; sourceTree = "<group>"; };
 		A2209C301C9323CF0067D819 /* FuckHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckHTTPClient.swift; sourceTree = "<group>"; };
+		A2CD33411CC10F49003DAB62 /* MockFuckHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFuckHTTPClient.swift; sourceTree = "<group>"; };
 		A2D8A17E1CAEB524009ABE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2DFF1FF1CAEABA600761669 /* FuckOffAsAServiceSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FuckOffAsAServiceSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		D197ABD5E0A224F476068433 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,13 +61,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A2209C0B1C930ACE0067D819 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2209C161C930ACE0067D819 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -108,7 +92,6 @@
 			children = (
 				A2209BF91C930ACE0067D819 /* FuckOffAsAServiceSwift */,
 				A2209C111C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */,
-				A2209C1C1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */,
 				A2209BF81C930ACE0067D819 /* Products */,
 				0D1A285813F2213F60DC4A89 /* Pods */,
 				2A8176A897D7AFDFEC174C93 /* Frameworks */,
@@ -120,7 +103,6 @@
 			children = (
 				A2209BF71C930ACE0067D819 /* FuckOffAsAServiceSwift.app */,
 				A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */,
-				A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,19 +127,19 @@
 		A2209C111C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				A2CD33401CC10F38003DAB62 /* Mock */,
 				A2209C121C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift */,
 				A2209C141C930ACE0067D819 /* Info.plist */,
 			);
 			path = FuckOffAsAServiceSwiftTests;
 			sourceTree = "<group>";
 		};
-		A2209C1C1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */ = {
+		A2CD33401CC10F38003DAB62 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				A2209C1D1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift */,
-				A2209C1F1C930ACE0067D819 /* Info.plist */,
+				A2CD33411CC10F49003DAB62 /* MockFuckHTTPClient.swift */,
 			);
-			path = FuckOffAsAServiceSwiftUITests;
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,31 +183,13 @@
 			productReference = A2209C0E1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A2209C181C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A2209C281C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftUITests" */;
-			buildPhases = (
-				A2209C151C930ACE0067D819 /* Sources */,
-				A2209C161C930ACE0067D819 /* Frameworks */,
-				A2209C171C930ACE0067D819 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A2209C1B1C930ACE0067D819 /* PBXTargetDependency */,
-			);
-			name = FuckOffAsAServiceSwiftUITests;
-			productName = FuckOffAsAServiceSwiftUITests;
-			productReference = A2209C191C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A2209BEF1C930ACE0067D819 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Marks and Spencer";
 				TargetAttributes = {
@@ -233,10 +197,6 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					A2209C0D1C930ACE0067D819 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = A2209BF61C930ACE0067D819;
-					};
-					A2209C181C930ACE0067D819 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = A2209BF61C930ACE0067D819;
 					};
@@ -257,7 +217,6 @@
 			targets = (
 				A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */,
 				A2209C0D1C930ACE0067D819 /* FuckOffAsAServiceSwiftTests */,
-				A2209C181C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,13 +233,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A2209C0C1C930ACE0067D819 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2209C171C930ACE0067D819 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,14 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2209C131C930ACE0067D819 /* FuckOffAsAServiceSwiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2209C151C930ACE0067D819 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2209C1E1C930ACE0067D819 /* FuckOffAsAServiceSwiftUITests.swift in Sources */,
+				A2CD33421CC10F49003DAB62 /* MockFuckHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,11 +318,6 @@
 			isa = PBXTargetDependency;
 			target = A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */;
 			targetProxy = A2209C0F1C930ACE0067D819 /* PBXContainerItemProxy */;
-		};
-		A2209C1B1C930ACE0067D819 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A2209BF61C930ACE0067D819 /* FuckOffAsAServiceSwift */;
-			targetProxy = A2209C1A1C930ACE0067D819 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +381,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckOffAsAServiceSwift/FuckOffAsAServiceSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +420,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "FuckOffAsAServiceSwift/FuckOffAsAServiceSwift-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -493,7 +435,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FuckOffAsAServiceSwift/FuckOffAsAServiceSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -506,7 +447,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FuckOffAsAServiceSwift/FuckOffAsAServiceSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -514,10 +454,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuckOffAsAServiceSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckOffAsAServiceSwift.app/FuckOffAsAServiceSwift";
 			};
 			name = Debug;
@@ -526,35 +468,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FuckOffAsAServiceSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuckOffAsAServiceSwift.app/FuckOffAsAServiceSwift";
-			};
-			name = Release;
-		};
-		A2209C291C930ACE0067D819 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FuckOffAsAServiceSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FuckOffAsAServiceSwift;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		A2209C2A1C930ACE0067D819 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FuckOffAsAServiceSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marksandspencer.di.FuckOffAsAServiceSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FuckOffAsAServiceSwift;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -584,15 +503,6 @@
 			buildConfigurations = (
 				A2209C261C930ACE0067D819 /* Debug */,
 				A2209C271C930ACE0067D819 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2209C281C930ACE0067D819 /* Build configuration list for PBXNativeTarget "FuckOffAsAServiceSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2209C291C930ACE0067D819 /* Debug */,
-				A2209C2A1C930ACE0067D819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

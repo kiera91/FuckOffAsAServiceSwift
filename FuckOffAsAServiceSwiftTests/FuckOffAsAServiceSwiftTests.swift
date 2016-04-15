@@ -11,26 +11,26 @@ import XCTest
 
 class FuckOffAsAServiceSwiftTests: XCTestCase {
     
+    var sut: FuckOffAsAService!
+    var mockHttpClient: MockFuckHTTPClient!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        sut = FuckOffAsAService(mockHttpClient)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func test_fuckNameFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckNameFrom("kiera", "chris", .off)
+        
+        XCTAssert(mockHttpClient.call == 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/off/kiera/chris")
     }
     
 }

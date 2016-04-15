@@ -8,7 +8,11 @@
 
 import Foundation
 
-class FuckHTTPClient: AFHTTPSessionManager {
+protocol FuckHTTPClientProtocol {
+    func call(query: String)
+}
+
+class FuckHTTPClient: AFHTTPSessionManager, FuckHTTPClientProtocol {
     let baseUrl = "https://www.foaas.com"
     
     init() {

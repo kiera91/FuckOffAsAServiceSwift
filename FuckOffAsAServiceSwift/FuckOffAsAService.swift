@@ -21,10 +21,10 @@ protocol FuckOffAsAServiceProtocol {
 }
 
 class FuckOffAsAService: FuckOffAsAServiceProtocol {
-    let fuckClient: FuckHTTPClient!
+    let fuckClient: FuckHTTPClientProtocol!
     
-    init() {
-        fuckClient = FuckHTTPClient()
+    init(fuckClient: FuckHTTPClientProtocol = FuckHTTPClient()) {
+        self.fuckClient = fuckClient
     }
     
     func fuckNameFrom(name: String, from: String, fuckToGive: FuckToGiveNameFrom) {
