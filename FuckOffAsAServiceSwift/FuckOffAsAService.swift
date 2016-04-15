@@ -10,7 +10,6 @@ import Foundation
 
 class FuckOffAsAService {
  
-    let baseUrl: String = "http://www.foaas.com"
     var name: String = ""
     var from: String = ""
     var reference: String = ""
@@ -59,6 +58,7 @@ class FuckOffAsAService {
     }
     
     func callFuckService() {
-        
+        let fuckClient = FuckHTTPClient(query: buildYourFuckString())
+        fuckClient.call()
     }
 }
