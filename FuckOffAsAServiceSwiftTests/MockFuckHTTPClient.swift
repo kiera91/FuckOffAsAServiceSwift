@@ -7,6 +7,7 @@
 //
 
 import Foundation
+@testable import FuckOffAsAServiceSwift
 
 class MockFuckHTTPClient: FuckHTTPClientProtocol {
     var callCount = 0

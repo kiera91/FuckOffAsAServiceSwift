@@ -12,7 +12,7 @@ protocol FuckOffAsAServiceProtocol {
     func fuckNameFrom(name: String, from: String, fuckToGive: FuckToGiveNameFrom)
     func fuckFrom(from: String, fuckToGive: FuckToGiveFrom)
     func fuckNameFromReference(name: String, from: String, reference: String,fuckToGive: FuckToGiveNameFromReference)
-    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameFromReference)
+    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameCompanyFrom)
     func fuckToolFrom(tool: String, from: String, fuckToGive: FuckToGiveToolFrom)
     func fuckReactionFrom(reaction: String, from: String, fuckToGive: FuckToGiveReactionFrom)
     func fuckDoSomethingFrom(`do`: String, something: String, from: String, fuckToGive: FuckToGiveDoSomethingFrom)
@@ -33,7 +33,7 @@ class FuckOffAsAService: FuckOffAsAServiceProtocol {
     }
     
     func fuckFrom(from: String, fuckToGive: FuckToGiveFrom) {
-        let fullFuckString = "\(fuckToGive.rawValue)/\(from)"
+        let fullFuckString = "\(fuckToGive.rawValue)\(from)"
         callFuckService(fullFuckString)
     }
     
@@ -42,7 +42,7 @@ class FuckOffAsAService: FuckOffAsAServiceProtocol {
         callFuckService(fullFuckString)
     }
     
-    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameFromReference) {
+    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameCompanyFrom) {
         let fullFuckString = "\(fuckToGive.rawValue)\(name)/\(company)/\(from)"
         callFuckService(fullFuckString)
     }

@@ -17,7 +17,8 @@ class FuckOffAsAServiceSwiftTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        sut = FuckOffAsAService(mockHttpClient)
+        mockHttpClient = MockFuckHTTPClient()
+        sut = FuckOffAsAService(fuckClient: mockHttpClient)
     }
     
     override func tearDown() {
@@ -27,10 +28,65 @@ class FuckOffAsAServiceSwiftTests: XCTestCase {
     }
     
     func test_fuckNameFrom_callsHTTPClient_withCorrectParam() {
-        sut.fuckNameFrom("kiera", "chris", .off)
+        sut.fuckNameFrom("kiera", from: "chris", fuckToGive: .off)
         
-        XCTAssert(mockHttpClient.call == 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
         XCTAssertEqual(mockHttpClient.query, "/off/kiera/chris")
     }
     
+    func test_fuckFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckFrom("kiera", fuckToGive: .this)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/this/kiera")
+    }
+    
+    func test_fuckNameFromReference_callsHTTPClient_withCorrectParam() {
+        sut.fuckNameFromReference("kiera", from: "chris", reference: "test", fuckToGive: .field)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/field/kiera/chris/test")
+    }
+    
+    func test_fuckToGiveNameCompanyFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckToGiveNameCompanyFrom("kiera", company: "tesco", from: "chris", fuckToGive: .ballmer)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/ballmer/kiera/tesco/chris")
+    }
+    
+    func test_fuckToolFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckToolFrom("tool", from: "chris", fuckToGive: .caniuse)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/caniuse/tool/chris")
+    }
+    
+    func test_fuckReactionFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckReactionFrom("rubbish", from: "chris", fuckToGive: .keepcalm)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/keepcalm/rubbish/chris")
+    }
+    
+    func test_fuckDoSomethingFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckDoSomethingFrom("do", something: "something", from: "chris", fuckToGive: .doSomething)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/dosomething/do/something/chris")
+    }
+    
+    func test_fuckSubjectFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckSubjectFrom("kiera", from: "chris", fuckToGive: .thumbs)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/thumbs/kiera/chris")
+    }
+    
+    func test_fuckNounFrom_callsHTTPClient_withCorrectParam() {
+        sut.fuckNounFrom("kiera", from: "chris", fuckToGive: .greed)
+        
+        XCTAssertEqual(mockHttpClient.callCount, 1, "HTTP client not called")
+        XCTAssertEqual(mockHttpClient.query, "/greed/kiera/chris")
+    }
 }
