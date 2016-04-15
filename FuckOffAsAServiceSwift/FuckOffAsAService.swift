@@ -9,45 +9,70 @@
 import Foundation
 
 protocol FuckOffAsAServiceProtocol {
-    var name: String! { get set }
-    var from: String! { get set }
-    var reference: String! { get set }
-    var tool: String! { get set }
-    var company: String! { get set }
-    var theFuckToGive: FucksToGive! { get set }
-    
-    func buildYourFuckString() -> String
+    func fuckNameFrom(name: String, from: String, fuckToGive: FuckToGiveNameFrom)
+    func fuckFrom(from: String, fuckToGive: FuckToGiveFrom)
+    func fuckNameFromReference(name: String, from: String, reference: String,fuckToGive: FuckToGiveNameFromReference)
+    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameFromReference)
+    func fuckToolFrom(tool: String, from: String, fuckToGive: FuckToGiveToolFrom)
+    func fuckReactionFrom(reaction: String, from: String, fuckToGive: FuckToGiveReactionFrom)
+    func fuckDoSomethingFrom(`do`: String, something: String, from: String, fuckToGive: FuckToGiveDoSomethingFrom)
+    func fuckSubjectFrom(subject: String, from: String, fuckToGive: FuckToGiveSubjectFrom)
+    func fuckNounFrom(noun: String, from: String, fuckToGive: FuckToGiveNounFrom)
 }
 
 class FuckOffAsAService: FuckOffAsAServiceProtocol {
-    var name: String!
-    var from: String!
-    var reference: String!
-    var tool: String!
-    var company: String!
-    var theFuckToGive: FucksToGive!
+    let fuckClient: FuckHTTPClient!
     
-    init(from: String, name: String, reference: String = "", tool: String = "", company: String = "", theFuckToGive: FucksToGive) {
-        self.from = from
-        self.name = name
-        self.reference = reference
-        self.tool = tool
-        self.company = company
-        self.theFuckToGive = theFuckToGive
+    init() {
+        fuckClient = FuckHTTPClient()
     }
     
-    func buildYourFuckString() -> String {
-        var fullFuck = theFuckToGive.rawValue
-        fullFuck = fullFuck.stringByReplacingOccurrencesOfString(":name", withString: name)
-        fullFuck = fullFuck.stringByReplacingOccurrencesOfString(":from", withString: from)
-        fullFuck = fullFuck.stringByReplacingOccurrencesOfString(":company", withString: company)
-        fullFuck = fullFuck.stringByReplacingOccurrencesOfString(":reference", withString: reference)
-        fullFuck = fullFuck.stringByReplacingOccurrencesOfString(":tool", withString: tool)
-        return fullFuck
+    func fuckNameFrom(name: String, from: String, fuckToGive: FuckToGiveNameFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(name)/\(from)"
+        callFuckService(fullFuckString)
     }
     
-    func callFuckService() {
-        let fuckClient = FuckHTTPClient(query: buildYourFuckString())
-        fuckClient.call()
+    func fuckFrom(from: String, fuckToGive: FuckToGiveFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckNameFromReference(name: String, from: String, reference: String,fuckToGive: FuckToGiveNameFromReference) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(name)/\(from)/\(reference)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckToGiveNameCompanyFrom(name: String, company: String, from: String,fuckToGive: FuckToGiveNameFromReference) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(name)/\(company)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckToolFrom(tool: String, from: String, fuckToGive: FuckToGiveToolFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(tool)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckReactionFrom(reaction: String, from: String, fuckToGive: FuckToGiveReactionFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(reaction)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckDoSomethingFrom(`do`: String, something: String, from: String, fuckToGive: FuckToGiveDoSomethingFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(`do`)/\(something)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckSubjectFrom(subject: String, from: String, fuckToGive: FuckToGiveSubjectFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(subject)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func fuckNounFrom(noun: String, from: String, fuckToGive: FuckToGiveNounFrom) {
+        let fullFuckString = "\(fuckToGive.rawValue)\(noun)/\(from)"
+        callFuckService(fullFuckString)
+    }
+    
+    func callFuckService(fuckString: String) {
+        fuckClient.call(fuckString)
     }
 }

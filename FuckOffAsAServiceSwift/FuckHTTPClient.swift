@@ -10,19 +10,16 @@ import Foundation
 
 class FuckHTTPClient: AFHTTPSessionManager {
     let baseUrl = "https://www.foaas.com"
-    var query: String!
     
-    init(query:String) {
+    init() {
         super.init(baseURL: NSURL(string: baseUrl), sessionConfiguration: nil)
-        self.query = query
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.query = ""
     }
     
-    func call() {
+    func call(query: String) {
         requestSerializer = AFJSONRequestSerializer()
         requestSerializer.setValue("application/json", forHTTPHeaderField: "Accept")
         GET(query, parameters: nil,
